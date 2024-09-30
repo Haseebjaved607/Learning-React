@@ -1,12 +1,27 @@
-.rf{
-    text-align:center;  
-    border: solid black 2px;
-    width: 50%;
-   
+.rf {
+  text-align: center;
+  border: solid black 2px;
+
+  width: 50%;
 }
-.center{
-    margin-top: 20px;
+.center {
+  margin-top: 20px;
 }
-h1{
-    border-radius: 8px;
+h1 {
+  border: solid black 2px;
+  border-radius: 8px;
+}
+h4 {
+  border: solid black 2px;
+  border-radius: 8px;
+  width: 50%;
+  background-color: rgb(226, 20, 20);
+  height: 50px;
+  align-items: center;
+  /* text-align: center; */
+  padding: 6px;
+}
+/* Hide border when the ul is empty */
+.rf:empty {
+  border: none;
 }

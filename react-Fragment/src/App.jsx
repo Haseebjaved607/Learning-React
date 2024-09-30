@@ -1,4 +1,4 @@
-import FoodList from "./list";
+import FoodList from "./mapping";
 import "./app.css";
 
 function App() {
