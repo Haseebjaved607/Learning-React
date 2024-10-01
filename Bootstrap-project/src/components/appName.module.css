@@ -1,0 +1,17 @@
+
+ .todoHeading {
+     font-weight: 600;
+     /* font-size: 35px; */
+     /* color: rgba(15, 13, 12, 0); */
+     text-align: center;
+     margin: 10px;
+     padding: 6px;
+     margin-bottom: 20px;
+     /* border: 3px solid black; */
+     border-radius: 6px;
+     width: 40%;
+     min-width: 40%;
+     background-color: rgb(34, 34, 233);
+
+   }
+  
