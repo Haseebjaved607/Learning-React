@@ -10,6 +10,7 @@
 h1 {
   border: solid black 2px;
   border-radius: 8px;
+  background-color:gray;
 }
 h4 {
   border: solid black 2px;
@@ -24,4 +25,12 @@ h4 {
 /* Hide border when the ul is empty */
 .rf:empty {
   border: none;
+}
+.child-container{
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 40%;
+  padding: 10px;
+  margin: 5px auto;
+   
 }
