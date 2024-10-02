@@ -1,6 +1,6 @@
 // components/FoodItems.jsx
 import PropTypes from 'prop-types';
-import Item from "./Item"; // Import the Item component
+import Item from "./item"; // Import the Item component
 
 const FoodItems = ({ items }) => {
   return (
