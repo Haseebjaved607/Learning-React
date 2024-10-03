@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-const Container = (props)=>{
+const Container = ({children})=>{
     return <div className="child-container">
-        {props.children}
+        {children}
     </div>
 
 }

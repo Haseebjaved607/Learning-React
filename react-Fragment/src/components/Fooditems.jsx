@@ -1,23 +1,31 @@
-// components/FoodItems.jsx
+import { useState } from "react";
 import PropTypes from 'prop-types';
-import Item from "./item"; // Import the Item component
+import Item from "./item"; 
 
 const FoodItems = ({ items }) => {
+  let [activeItems, setActiveItems] = useState([]);
+
+  let onBuyButton = (item) => {
+    let newItems = [...activeItems, item];
+    setActiveItems(newItems);
+  };
+
   return (
     <ul className="list-group">
-      {items.length > 0 ? (
-        items.map((item) => (
-          <Item key={item} foodItem={item} />
-        ))
-      ) : (
-        <li className="list-group-item">No food items available.</li>
-      )}
+      {items.map((item) => (
+        <Item
+        key={item}
+          foodItem={item}
+          bought={activeItems.includes(item)}  // bought should be a boolean
+          handleBuyButton={() => onBuyButton(item)} // handleBuyButton is a function
+        />
+      ))}
     </ul>
   );
 };
 
 FoodItems.propTypes = {
-  items: PropTypes.array.isRequired, // Validate that items is an array and is required
+  items: PropTypes.array.isRequired,  // items should be an array
 };
 
 export default FoodItems;
