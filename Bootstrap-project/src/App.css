@@ -1,33 +1,42 @@
+
 input {
   border: none;
   outline: none;
-  width: 70%;
+  width: 80%;
   padding: 3px;
   border-radius: 3px;
   /* margin-left: 100px; */
 }
+#hr{
+  height: 5px;  
+}
+#hr2{
+  /* height: 5px;  */
+  margin-top: -19px; 
+}
+
+
 
 .kg-button {
   min-width: 80px;
-  
+  float: right;
 }
 
 .kg-row {
-  margin: 5px ;
-  /* border: 3px solid black; */
+  margin: 5px;
   border-radius: 6px;
-  background-color: rgb(21, 206, 206);
-  /* min-width: 40%; */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff3cd; /* min-width: 40%; */
   width: 100%;
   align-items: center;
   text-align: left;
-  
 }
-/* .hf{
-    align-items: center;
-    text-align: left;
+/* to do app whole block*/
+.totoblock {
+  box-shadow: 0 4px 12px rgba(20, 10, 20, 15);
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 15px;
+  padding: 16px 5px;
+  background: linear-gradient(135deg, #64b5f6, #01eebb);
 }
-.container{
-  align-items: center;
-  
-} */
