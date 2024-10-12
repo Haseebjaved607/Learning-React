@@ -5,13 +5,14 @@ import { MdAddTask } from "react-icons/md";
 
 
 
-
 function AddTodo({ onNewitem }) {
-  const todoNameElement = useRef();
-  const todoDateElement = useRef()
 
   // const [todoName, setodoName] = useState("")
   // const [todoDate, setodoDate] = useState("")
+  const todoNameElement = useRef();
+  const todoDateElement = useRef()
+
+
 
   // const handleNameChange = (event) => {
   //   setodoName(event.target.value);
@@ -24,15 +25,13 @@ function AddTodo({ onNewitem }) {
 
   const handleAddButtonClicked = (event) => {
     event.preventDefault()
-    const todoName = todoNameElement.current.value ;
-    const todoDate = todoDateElement.current.value ;
-    console.log(`${todoName} due on ; ${todoDate}`);
+    const todoName = todoNameElement.current.value = ""
+    const todoDate = todoDateElement.current.value = ""
+console.log(`${todoName} due on ; ${todoDate}`);
 
     onNewitem(todoName, todoDate);
     // setodoDate("");
     // setodoName("");
-    todoNameElement.current.value = "";
-    todoDateElement.current.value = "";
   };
 
   return (
@@ -71,3 +70,14 @@ AddTodo.propTypes = {
 };
 
 export default AddTodo;
+
+
+
+const handleNameChange = (event) => {
+    setodoName(event.target.value);
+
+  };
+  const handleDateChange = (event) => {
+    setodoDate(event.target.value)
+
+  };
